@@ -4,6 +4,7 @@ body {
     background: url('https://cdn.pixabay.com/photo/2019/06/22/08/10/leaves-4291098_1280.jpg') center center/cover; /* Set background image for the entire page */
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 .text-box {
