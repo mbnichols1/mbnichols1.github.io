@@ -10,14 +10,18 @@ h1 {
     text-align: center;
     margin-top: 50px;
 }
+/*button*/
 .styled-btn {
     background-color: #3498db;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 0; /* Adjust padding for vertical alignment */
     font-size: 16px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    width: 250px; /* Set button width to 250px */
+    display: block; /* Change to block to center the button */
+    margin: 0 auto; /* Center the button horizontally */
 }
 
 .styled-btn:hover {
