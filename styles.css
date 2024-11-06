@@ -1,13 +1,13 @@
 
 
 body {
-    background: url('https://cdn.pixabay.com/photo/2015/03/16/08/18/hex-675576_1280.jpg') center center/cover; /* Set background image for the entire page */
+    background: url('https://cdn.pixabay.com/photo/2019/06/22/08/10/leaves-4291098_1280.jpg') center center/cover; /* Set background image for the entire page */
     margin: 0;
     padding: 0;
 }
 
 .text-box {
-    background-color: rgba(255, 255, 255, 0.5); /* White color with 50% transparency */
+    background-color: rgba(0, 0, 0, 0.5); /* White color with 50% transparency */
     padding: 20px;
     max-width: 80%; /* Set maximum width of the text box */
     margin: 0 auto; /* Center the text box horizontally */
