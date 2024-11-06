@@ -1,7 +1,9 @@
+
+
 body {
-    background: url('https://cdn.pixabay.com/photo/2022/07/17/11/59/amber-7327252_1280.jpg') center center/cover; /* Set background image for the entire page */
-    color: white; 
-    font-family: Arial, sans-serif; 
+    background: url('https://cdn.pixabay.com/photo/2015/03/16/08/18/hex-675576_1280.jpg') center center/cover; /* Set background image for the entire page */
+    margin: 0;
+    padding: 0;
 }
 
 .text-box {
@@ -10,6 +12,11 @@ body {
     max-width: 80%; /* Set maximum width of the text box */
     margin: 0 auto; /* Center the text box horizontally */
 }
+
+.text-box h1 {
+    color: black; /* Header text color within the text box */
+}
+
 .styled-btn {
     background-color: #3498db;
     color: white;
