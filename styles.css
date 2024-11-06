@@ -23,6 +23,8 @@ body {
 .text-box h1 {
     color: white;
     margin-top: 50px;
+    font-family: "Courier New", Courier, monospace;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
 }
 
 .styled-btn,
