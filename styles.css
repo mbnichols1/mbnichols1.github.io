@@ -14,7 +14,9 @@ body {
 }
 
 .text-box h1 {
-    color: white; /* Header text color within the text box */
+    text-align: center;
+    color: white; 
+    margin-top: 50px;
 }
 
 .styled-btn {
