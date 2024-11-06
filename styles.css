@@ -1,8 +1,7 @@
 body {
-    background: url('https://cdn.pixabay.com/photo/2022/07/17/11/59/amber-7327252_1280.jpg') center center/cover;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background: url('https://cdn.pixabay.com/photo/2022/07/17/11/59/amber-7327252_1280.jpg') center center/cover; /* Set background image for the entire page */
+    color: white; 
+    font-family: Arial, sans-serif; 
 }
 
 h1 {
