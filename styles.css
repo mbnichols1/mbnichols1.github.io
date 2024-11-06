@@ -1,25 +1,24 @@
-
-
 body {
-    background: url('https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg') center center/cover; /* Set background image for the entire page */
+    background: url('https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg') center center/cover;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
 }
 
 .text-box {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    max-width: 80%; 
-    margin: 0 auto; 
-}
-
-.text-box h1 {
-    text-align: center;
-    color: white; 
-    margin-top: 50px;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center; /* Center text and buttons */
 }
 
 .styled-btn {
+    display: block; /* Make buttons block-level elements */
+    margin: 10px auto; /* Add margin for spacing between buttons */
     background-color: #B8860B;
     color: white;
     padding: 10px 20px;
