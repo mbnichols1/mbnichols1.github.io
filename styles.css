@@ -1,16 +1,16 @@
 
 
 body {
-    background: url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg?semt=ais_hybrid') center center/cover; /* Set background image for the entire page */
+    background: url('https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg') center center/cover; /* Set background image for the entire page */
     margin: 0;
     padding: 0;
 }
 
 .text-box {
-    background-color: rgba(0, 0, 0, 0.5); /* White color with 50% transparency */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
-    max-width: 80%; /* Set maximum width of the text box */
-    margin: 0 auto; /* Center the text box horizontally */
+    max-width: 80%; 
+    margin: 0 auto; 
 }
 
 .text-box h1 {
