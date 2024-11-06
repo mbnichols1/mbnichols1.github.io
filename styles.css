@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
@@ -13,12 +13,19 @@ body {
     padding: 20px;
     max-width: 80%;
     margin: 0 auto;
-    text-align: center; /* Center text and buttons */
+    text-align: center;
+    color: white;
+}
+
+.text-box h1 {
+    color: white;
+    margin-top: 50px;
 }
 
 .styled-btn {
-    display: block; /* Make buttons block-level elements */
-    margin: 10px auto; /* Add margin for spacing between buttons */
+    display: block;
+    width: 200px;
+    margin: 10px auto;
     background-color: #B8860B;
     color: white;
     padding: 10px 20px;
