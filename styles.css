@@ -3,6 +3,13 @@ body {
     color: white; 
     font-family: Arial, sans-serif; 
 }
+
+.text-box {
+    background-color: rgba(255, 255, 255, 0.5); /* White color with 50% transparency */
+    padding: 20px;
+    max-width: 80%; /* Set maximum width of the text box */
+    margin: 0 auto; /* Center the text box horizontally */
+}
 .styled-btn {
     background-color: #3498db;
     color: white;
