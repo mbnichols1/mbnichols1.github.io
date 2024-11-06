@@ -22,7 +22,8 @@ body {
     margin-top: 50px;
 }
 
-.styled-btn {
+.styled-btn,
+.text-box a {
     display: block;
     width: 200px;
     margin: 10px auto;
@@ -35,10 +36,12 @@ body {
     border-radius: 5px;
 }
 
-.styled-btn:hover {
+.styled-btn:hover,
+.text-box a:hover {
     background-color: #f4c03e;
 }
 
-.styled-btn:active {
+.styled-btn:active,
+.text-box a:active {
     background-color: #B8860B;
 }
