@@ -1,7 +1,7 @@
 
 
 body {
-    background: url('https://cdn.pixabay.com/photo/2019/06/22/08/10/leaves-4291098_1280.jpg') center center/cover; /* Set background image for the entire page */
+    background: url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg?semt=ais_hybrid') center center/cover; /* Set background image for the entire page */
     margin: 0;
     padding: 0;
 }
@@ -28,9 +28,9 @@ body {
 }
 
 .styled-btn:hover {
-    background-color: #2980b9;
+    background-color: #f4c03e;
 }
 
 .styled-btn:active {
-    background-color: #1f618d;
+    background-color: #B8860B;
 }
