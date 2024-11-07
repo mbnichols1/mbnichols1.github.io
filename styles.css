@@ -35,10 +35,13 @@ body {
 
 
 .text-box h1 {
-    color: white;
+    color: transparent; 
+    background-image: linear-gradient(to right, #3498db, #2980b9); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
     margin-top: 50px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    animation: bounce 2s infinite;
+    animation: bounce 5s infinite;
 }
 
 .styled-btn,
