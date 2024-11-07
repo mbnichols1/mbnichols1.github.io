@@ -53,6 +53,7 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .styled-btn:hover,
