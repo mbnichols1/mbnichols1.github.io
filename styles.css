@@ -1,5 +1,4 @@
 body {
-    cursor: url('https://www.freeiconspng.com/thumbs/cursor-png/glowing-cursor-2.png'), auto;
     background: url('https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg') center center/cover;
     margin: 0;
     padding: 0;
@@ -8,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     font-family: "Courier New", Courier, monospace;
+    cursor: url('https://png.pngtree.com/png-clipart/20221119/ourmid/pngtree-orange-pink-neon-border-square-light-png-image_6472006.png'), auto;
 }
 
 .text-box {
