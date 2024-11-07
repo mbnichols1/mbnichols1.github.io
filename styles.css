@@ -35,7 +35,7 @@ body {
 
 
 .text-box h1 {
-    color: yellow; 
+    color: transparent; 
     background-image: linear-gradient(to left, #3498db, #2980b9); 
     -webkit-background-clip: text; 
     background-clip: text; 
