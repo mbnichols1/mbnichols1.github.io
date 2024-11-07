@@ -26,22 +26,23 @@ body {
         transform: translateY(0);
     }
     40% {
-        transform: translateY(-30px);
+        transform: translateY(-15px);
     }
     60% {
-        transform: translateY(-15px);
+        transform: translateY(-7.5px);
     }
 }
 
 
 .text-box h1 {
     color: transparent; 
-    background-image: linear-gradient(to right, #3498db, #2980b9); 
+    background-image: linear-gradient(to left, #3498db, #2980b9); 
     -webkit-background-clip: text; 
     background-clip: text; 
     margin-top: 50px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    animation: bounce 5s infinite;
+    animation: bounce 2s infinite;
+    animation-delay: 10s;
 }
 
 .styled-btn,
