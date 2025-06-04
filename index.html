@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+    <div class="particle-container"></div>
     <div class="text-box">
         <h1>MNICHOLS</h1>
         <button class="styled-btn">ABOUT</button>
@@ -14,5 +15,26 @@
         <a href="https://github.com/mbnichols1" class="styled-btn">GITHUB</a>
         <a href="https://www.linkedin.com/in/macie-nichols-718595291" class="styled-btn">LINKEDIN</a>
     </div>
+    <script>
+        //JS for particles
+        const particleContainer = document.querySelector('.particle-container');
+
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.animationDuration = 10 + Math.random() * 10 + 's';
+            particle.style.opacity = Math.random();
+            particleContainer.appendChild(particle);
+
+            // Remove particles at end
+            setTimeout(() => {
+                particle.remove();
+            }, 10000);
+        }
+
+        setInterval(createParticle, 200); // Create a new one every x ms
+    </script>
+        }
 </body>
 </html>
