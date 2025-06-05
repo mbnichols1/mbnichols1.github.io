@@ -9,12 +9,56 @@
 <body>
     <div class="particle-container"></div>
     <div class="text-box">
-        <h1>MNICHOLS</h1>
-        <button class="styled-btn">ABOUT</button>
-        <button class="styled-btn">RECENT</button>
+        <h1>M A C I E</h1>
+        <button class="styled-btn" id="contact-toggle">CONTACT</button>
         <a href="https://github.com/mbnichols1" class="styled-btn">GITHUB</a>
         <a href="https://www.linkedin.com/in/macie-nichols-718595291" class="styled-btn">LINKEDIN</a>
+        <a href="https://app.joinhandshake.com/profiles/nttye4" class="styled-btn">HANDSHAKE</a>
     </div>
+    <div class="custom-cursor"></div>
+
+    <div class="contact-form hidden" id="contact-form">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="styled-btn">Send</button>
+        </form>
+    </div>
+
+    <section class="projects">
+
+        <div class="project-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="https://github.com/mbnichols1/JS-To-Do-List/blob/main/ToDoListScreenshot.png?raw=true" alt="Project 1 Screenshot">
+                <h3>To Do List</h3>
+                <p>A to-do list website with local storage.</p>
+                <a href="https://mbnichols1.github.io/JS-To-Do-List/" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="https://github.com/mbnichols1/JS-Chess-AI/blob/main/ChessAIGame.png?raw=true" alt="Project 2 Screenshot">
+                <h3>Chess Game</h3>
+                <p>A chess game vs AI.</p>
+                <a href="https://mbnichols1.github.io/JS-Chess-AI/" target="_blank">View on GitHub</a>
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="https://github.com/mbnichols1/JS-Password-Generator/blob/main/passwordGeneratorScreenshot.png?raw=true" alt="Project 3 Screenshot">
+                <h3>Password Generator</h3>
+                <p>A basic password generator.</p>
+                <a href="https://mbnichols1.github.io/JS-Password-Generator/" target="_blank">View on GitHub</a>
+            </div>
+
+        </div>
+    </section>
+
+
     <script>
         //JS for particles
         const particleContainer = document.querySelector('.particle-container');
@@ -34,7 +78,38 @@
         }
 
         setInterval(createParticle, 200); // Create a new one every x ms
+
     </script>
-        }
+    <script>
+        const contactBtn = document.getElementById('contact-toggle');
+        const contactForm = document.getElementById('contact-form');
+
+        contactBtn.addEventListener('click', () => {
+            if (contactForm.style.display === 'flex') {
+                contactForm.style.display = 'none';
+            } else {
+                contactForm.style.display = 'flex';
+            }
+        });
+    </script>
+    <script>
+        const cursor = document.querySelector('.custom-cursor');
+
+        window.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+        window.addEventListener('click', (e) => {
+            const ripple = document.createElement('div');
+            ripple.classList.add('ripple');
+            ripple.style.left = `${e.clientX}px`;
+            ripple.style.top = `${e.clientY}px`;
+            document.body.appendChild(ripple);
+
+            setTimeout(() => {
+                ripple.remove();
+            }, 600); // Match the animation duration
+        });
+    </script>
 </body>
 </html>
