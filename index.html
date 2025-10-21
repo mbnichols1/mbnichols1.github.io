@@ -9,50 +9,33 @@
 <body>
     <div class="particle-container"></div>
     <div class="text-box">
-        <h1>M A C I E</h1>
+        <h1>Macie Nichols</h1>
         <p>
-            I'm an aspiring developer with a passion for learning and building. Right now, I'm focused on growing my skills and exploring new technologies. Feel free to reach out through any of the links below—I'd love to connect!</p>
-        <button class="styled-btn large-btn" id="contact-toggle">CONTACT</button>
-        <a href="https://github.com/mbnichols1" class="styled-btn large-btn">GITHUB</a>
-        <a href="https://www.linkedin.com/in/macie-nichols-718595291" class="styled-btn large-btn">LINKEDIN</a>
-        <a href="https://app.joinhandshake.com/profiles/nttye4" class="styled-btn large-btn">HANDSHAKE</a>
-    
+            I'm an aspiring developer with a passion for learning and building. Right now, I'm focused on growing my skills and exploring new technologies. Feel free to shoot me an email! macniwork@hotmail.com</p></div>
+
     <div class="custom-cursor"></div>
 
-    <div class="contact-form hidden" id="contact-form">
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="styled-btn">Send</button>
-        </form>
-    </div>
 
     <section class="projects">
 
         <div class="project-grid">
 
+
             <!-- Project 1 -->
-            <div class="project-card">
-                <img src="https://github.com/mbnichols1/JS-To-Do-List/blob/main/To-do-ListScreenshot(2).PNG?raw=true" alt="Project 1 Screenshot">
-                <h3>To Do List</h3>
-                <a href="https://mbnichols1.github.io/JS-To-Do-List/" target="_blank">VIEW</a>
-            </div>
+
+            <a href="https://macnic01.itch.io/houseonthehill" class="project-card" target="_blank">
+                <img src="https://img.itch.zone/aW1nLzIyNjg3NzcyLnBuZw==/347x500/yiKVID.png" alt="Project">
+                <h3>House On The Hill</h3>
+            </a>
+
 
             <!-- Project 2 -->
-            <div class="project-card">
-                <img src="https://github.com/mbnichols1/JS-Chess-AI/blob/main/Chess-vs-AI-Screenshot(2).PNG?raw=true" alt="Project 2 Screenshot">
-                <h3>Chess Game</h3>
-                <a href="https://mbnichols1.github.io/JS-Chess-AI/" target="_blank">VIEW</a>
-            </div>
 
+            <a href="https://macnic01.itch.io/pixel-harvest" class="project-card" target="_blank">
+                <img src="https://img.itch.zone/aW1hZ2UvMzczNzk2Mi8yMjI0NjkxMy5wbmc=/794x1000/BGbvEC.png" alt="Project">
+                <h3>Pixel Harvest</h3>
+            </a>
 
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="https://github.com/mbnichols1/JS-Password-Generator/blob/main/passwordGeneratorScreenshot.png?raw=true" alt="Project 3 Screenshot">
-                <h3>Password Generator</h3>
-                <a href="https://mbnichols1.github.io/JS-Password-Generator/" target="_blank">VIEW</a>
-            </div>
 
         </div>
     </section>
@@ -70,13 +53,13 @@
             particle.style.opacity = Math.random();
             particleContainer.appendChild(particle);
 
-            // Remove particles at end
+          
             setTimeout(() => {
                 particle.remove();
             }, 10000);
         }
 
-        setInterval(createParticle, 200); // Create a new one every x ms
+        setInterval(createParticle, 200);
 
     </script>
     <script>
@@ -107,7 +90,7 @@
 
             setTimeout(() => {
                 ripple.remove();
-            }, 600); // Match the animation duration
+            }, 600);
         });
     </script>
 </body>
