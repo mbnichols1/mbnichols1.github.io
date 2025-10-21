@@ -1,11 +1,11 @@
 /* General body styles */
 body {
-    background: linear-gradient(-45deg, #0D1B2A, #1B2A4D, #0D1B2A, #1B2A4D);
+    background: linear-gradient(-45deg, #0D1B2A, #1E3A8A, #0F172A, #1E40AF);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     margin: 0;
     padding: 0;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'PT Serif', Georgia, 'Times New Roman', serif;
     cursor: none;
 }
 
@@ -40,7 +40,7 @@ body {
     position: fixed;
     width: 20px;
     height: 20px;
-    background-color: #00BFFF; /* blue accent */
+    background-color: #00BFFF; 
     border-radius: 50%;
     pointer-events: none;
     z-index: 9998;
@@ -63,18 +63,18 @@ body {
 
 /* Text box and headings */
 .text-box {
-    background-color: rgba(0, 0, 50, 0); /* dark blue overlay */
+    background-color: rgba(0, 0, 50, 0); 
     padding: 20px;
-    max-width: 80%;
+    max-width: 50%;
     margin: 0 auto;
     margin-top: 60px;
     text-align: center;
-    color: #E0F0FF; /* light blue text */
+    color: #E0F0FF; 
     font-family: 'PT Serif', Georgia, 'Times New Roman', serif;
 }
 
     .text-box h1 {
-        color: #00BFFF;
+        color: #5a7ded;
         margin-top: 50px;
         text-shadow: 2px 2px 4px rgba(0, 0, 50, 0.8);
         font-size: 64px;
@@ -86,11 +86,11 @@ body {
         display: inline-block;
         width: auto;
         margin: 0;
-        background-color: #1E90FF; /* blue button */
+        background-color: #1E90FF; 
         color: #E0F0FF;
         padding: 10px 20px;
         font-size: 16px;
-        font-family: "Courier New", Courier, monospace;
+        font-family: 'PT Serif', Georgia, 'Times New Roman', serif;
         border: none;
         cursor: pointer;
         border-radius: 5px;
@@ -138,7 +138,7 @@ body {
     .contact-form textarea {
         padding: 10px;
         margin-bottom: 10px;
-        font-family: "Courier New", Courier, monospace;
+        font-family: 'PT Serif', Georgia, 'Times New Roman', serif;
         border: none;
         border-radius: 5px;
     }
@@ -183,13 +183,13 @@ body {
 /* Make the entire card clickable */
 a.project-card {
     display: block;
-    background-color: rgba(0, 0, 80, 0.5);
+    background-color: #2b4dbd;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px #00008B;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-decoration: none !important; 
-    color: white !important; 
+    text-decoration: none !important;
+    color: white !important;
     cursor: pointer;
 }
 
