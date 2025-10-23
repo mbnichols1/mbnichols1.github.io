@@ -63,18 +63,18 @@ body {
 
 /* Text box and headings */
 .text-box {
-    background-color: rgba(0, 0, 50, 0); 
+    background-color: rgba(0, 0, 50, 0);
     padding: 20px;
     max-width: 50%;
     margin: 0 auto;
     margin-top: 60px;
     text-align: center;
-    color: #E0F0FF; 
+    color: #8f97b3;
     font-family: 'PT Serif', Georgia, 'Times New Roman', serif;
 }
 
     .text-box h1 {
-        color: #5a7ded;
+        color: #4FC3F7;
         margin-top: 50px;
         text-shadow: 2px 2px 4px rgba(0, 0, 50, 0.8);
         font-size: 64px;
@@ -173,6 +173,17 @@ body {
         color: #00BFFF;
     }
 
+.projects-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #82B1FF;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -227,4 +238,72 @@ a.project-card {
     margin-bottom: 15px;
     color: #E0F0FF;
     pointer-events: none;
+}
+
+.gallery {
+    text-align: center;
+    margin-top: 4rem;
+    color: #82B1FF;
+}
+
+    .gallery h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    margin-bottom: 100px;
+}
+
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+    .slide.active {
+        display: block;
+        opacity: 1;
+    }
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.3em 0.6em;
+    border-radius: 50%;
+    user-select: none;
+}
+
+    .prev:hover, .next:hover {
+        background: rgba(255,255,255,0.2);
+    }
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
