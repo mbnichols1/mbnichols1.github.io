@@ -11,12 +11,17 @@
     <div class="text-box">
         <h1>Macie Nichols</h1>
         <p>
-            I'm an aspiring developer with a passion for learning and building. Right now, I'm focused on growing my skills and exploring new technologies. Feel free to shoot me an email! macniwork@hotmail.com</p></div>
+            I'm an aspiring developer with a passion for learning and building. Right now, I'm focused on growing my skills and exploring new technologies. Feel free to shoot me an email:  macniwork@hotmail.com
+        </p>
+    </div>
 
     <div class="custom-cursor"></div>
 
 
     <section class="projects">
+
+
+        <h4 class="projects-title">Game Showcase</h4>
 
         <div class="project-grid">
 
@@ -39,59 +44,101 @@
 
         </div>
     </section>
-        </div>
+    </div>
 
-    <script>
-        //JS for particles
-        const particleContainer = document.querySelector('.particle-container');
 
-        function createParticle() {
-            const particle = document.createElement('div');
-            particle.classList.add('particle');
-            particle.style.left = Math.random() * 100 + 'vw';
-            particle.style.animationDuration = 10 + Math.random() * 10 + 's';
-            particle.style.opacity = Math.random();
-            particleContainer.appendChild(particle);
+    <!-- Blender Renders Slideshow -->
+    <section class="gallery">
+        <h2>Blender Showcase</h2>
 
-          
-            setTimeout(() => {
-                particle.remove();
-            }, 10000);
-        }
+        <div class="slider">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
 
-        setInterval(createParticle, 200);
+            <div class="slides">
+                <img src="https://github.com/mbnichols1/mbnichols1.github.io/blob/main/PotionBottles.png?raw=true" alt="Render 1" class="slide active">
+                <!-- <img src="https://img.itch.zone/aW1hZ2UvMzczNzk2Mi8yMjI0NjkxMy5wbmc=/794x1000/BGbvEC.png alt="Render 2" class="slide">
+                    <img src="https://img.itch.zone/aW1nLzIyNjg3NzcyLnBuZw==/347x500/yiKVID.png" alt="Render 3" class="slide"> -->
+                </div>
 
-    </script>
-    <script>
-        const contactBtn = document.getElementById('contact-toggle');
-        const contactForm = document.getElementById('contact-form');
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
 
-        contactBtn.addEventListener('click', () => {
-            if (contactForm.style.display === 'flex') {
-                contactForm.style.display = 'none';
-            } else {
-                contactForm.style.display = 'flex';
+
+        <script>
+            //JS for particles
+            const particleContainer = document.querySelector('.particle-container');
+
+            function createParticle() {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.animationDuration = 10 + Math.random() * 10 + 's';
+                particle.style.opacity = Math.random();
+                particleContainer.appendChild(particle);
+
+
+                setTimeout(() => {
+                    particle.remove();
+                }, 10000);
             }
-        });
-    </script>
-    <script>
-        const cursor = document.querySelector('.custom-cursor');
 
-        window.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-        });
-        window.addEventListener('click', (e) => {
-            const ripple = document.createElement('div');
-            ripple.classList.add('ripple');
-            ripple.style.left = `${e.clientX}px`;
-            ripple.style.top = `${e.clientY}px`;
-            document.body.appendChild(ripple);
+            setInterval(createParticle, 200);
 
-            setTimeout(() => {
-                ripple.remove();
-            }, 600);
-        });
-    </script>
-</body>
-</html>
+        </script>
+        <script>
+            const contactBtn = document.getElementById('contact-toggle');
+            const contactForm = document.getElementById('contact-form');
+
+            contactBtn.addEventListener('click', () => {
+                if (contactForm.style.display === 'flex') {
+                    contactForm.style.display = 'none';
+                } else {
+                    contactForm.style.display = 'flex';
+                }
+            });
+        </script>
+        <script>
+            const cursor = document.querySelector('.custom-cursor');
+
+            window.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            });
+            window.addEventListener('click', (e) => {
+                const ripple = document.createElement('div');
+                ripple.classList.add('ripple');
+                ripple.style.left = `${e.clientX}px`;
+                ripple.style.top = `${e.clientY}px`;
+                document.body.appendChild(ripple);
+
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        </script>
+
+        <script>
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                const slides = document.querySelectorAll('.slide');
+                if (index >= slides.length) currentSlide = 0;
+                else if (index < 0) currentSlide = slides.length - 1;
+                else currentSlide = index;
+
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === currentSlide);
+                });
+            }
+
+            function changeSlide(direction) {
+                showSlide(currentSlide + direction);
+            }
+
+            // auto-slide every 5 seconds
+            setInterval(() => changeSlide(1), 5000);
+        </script>
+
+    </body>
+    </html>
